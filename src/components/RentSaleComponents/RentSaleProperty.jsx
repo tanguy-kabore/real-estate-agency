@@ -43,11 +43,7 @@ function RentSaleProperty(props) {
                           marginTop: '0.5rem'
                       }}
                   >
-<<<<<<< HEAD
-                      £{props.propertyPrice} per month
-=======
                       £{props.propertyPrice} par mois
->>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
                   </Typography>
                   <Typography 
                       variant='body1'
