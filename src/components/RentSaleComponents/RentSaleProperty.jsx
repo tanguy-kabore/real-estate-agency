@@ -43,7 +43,7 @@ function RentSaleProperty(props) {
                           marginTop: '0.5rem'
                       }}
                   >
-                      £{props.propertyPrice} par mois
+                      {props.propertyPrice} par mois
                   </Typography>
                   <Typography 
                       variant='body1'

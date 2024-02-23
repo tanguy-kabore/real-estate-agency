@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Container, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -30,138 +30,138 @@ function MortgageCalculator(props) {
 
     window.onload = calculation;
 
-  return (
-    <Container sx={{
-        marginY: '3rem',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-    }}>
-        <Typography 
-            variant='h2'
-            sx={{
-                textTransform: 'capitalize',
-                textAlign: 'center',
-                fontSize: '3rem',
-                marginBottom: '3rem'
-            }}
-        >
-            Mortgage calculator
-        </Typography>
-
-        <Box sx={{
-            width: { xs: '100%', md: '50%' }
+    return (
+        <Container sx={{
+            marginY: '3rem',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
         }}>
-            <form 
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column'
+            <Typography
+                variant='h2'
+                sx={{
+                    textTransform: 'capitalize',
+                    textAlign: 'center',
+                    fontSize: '3rem',
+                    marginBottom: '3rem'
                 }}
-                onSubmit={calculation}
             >
-                <TextField
-                    id="full-price" 
-                    label="Full Price" 
-                    variant="outlined" 
-                    type='number'
-                    value={fullPrice}
-                    onChange={(event) => setFullPrice(event.target.value)}
-                    sx={{marginBottom: '1rem'}} 
-                    required
-                    InputProps={{
-                        endAdornment: <InputAdornment position="end">£</InputAdornment>,
-                    }}
-                />
-                <TextField
-                    id="deposit" 
-                    label="Deposit" 
-                    variant="outlined" 
-                    type='number'
-                    value={deposit}
-                    onChange={(event) => setDeposit(event.target.value)}
-                    sx={{marginBottom: '1rem'}} 
-                    required
-                    InputProps={{
-                        endAdornment: <InputAdornment position="end">%</InputAdornment>,
-                    }}
-                />
-                <TextField
-                    id="interest" 
-                    label="Interest Rate" 
-                    variant="outlined" 
-                    type='number'
-                    value={interest}
-                    onChange={(event) => setInterest(event.target.value)}
-                    sx={{marginBottom: '1rem'}} 
-                    required
-                    InputProps={{
-                        endAdornment: <InputAdornment position="end">%</InputAdornment>,
-                    }}
-                />
-                <TextField 
-                    id="years" 
-                    label="Loan Term" 
-                    variant="outlined" 
-                    type='number'
-                    value={years}
-                    onChange={(event) => setYears(event.target.value)}
-                    sx={{marginBottom: '1rem'}} 
-                    required
-                    InputProps={{
-                        endAdornment: <InputAdornment position="end">yrs</InputAdornment>,
-                    }}
-                />
+                Calculateur d'hypothèque
+            </Typography>
 
-                <Typography 
-                    variant='body1'
-                    sx={{
-                        height: '3rem',
-                        backgroundColor: grey[100],
-                        marginBottom: '1rem',
+            <Box sx={{
+                width: { xs: '100%', md: '50%' }
+            }}>
+                <form
+                    style={{
                         display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        borderRadius: '5px'
+                        flexDirection: 'column'
                     }}
+                    onSubmit={calculation}
                 >
-                    <Typography 
-                        component='span'
+                    <TextField
+                        id="full-price"
+                        label="Prix complet"
+                        variant="outlined"
+                        type='number'
+                        value={fullPrice}
+                        onChange={(event) => setFullPrice(event.target.value)}
+                        sx={{ marginBottom: '1rem' }}
+                        required
+                        InputProps={{
+                            endAdornment: <InputAdornment position="end">DH</InputAdornment>,
+                        }}
+                    />
+                    <TextField
+                        id="deposit"
+                        label="Dépôt"
+                        variant="outlined"
+                        type='number'
+                        value={deposit}
+                        onChange={(event) => setDeposit(event.target.value)}
+                        sx={{ marginBottom: '1rem' }}
+                        required
+                        InputProps={{
+                            endAdornment: <InputAdornment position="end">%</InputAdornment>,
+                        }}
+                    />
+                    <TextField
+                        id="interest"
+                        label="Taux d'intérêt"
+                        variant="outlined"
+                        type='number'
+                        value={interest}
+                        onChange={(event) => setInterest(event.target.value)}
+                        sx={{ marginBottom: '1rem' }}
+                        required
+                        InputProps={{
+                            endAdornment: <InputAdornment position="end">%</InputAdornment>,
+                        }}
+                    />
+                    <TextField
+                        id="years"
+                        label="Durée du prêt"
+                        variant="outlined"
+                        type='number'
+                        value={years}
+                        onChange={(event) => setYears(event.target.value)}
+                        sx={{ marginBottom: '1rem' }}
+                        required
+                        InputProps={{
+                            endAdornment: <InputAdornment position="end">yrs</InputAdornment>,
+                        }}
+                    />
+
+                    <Typography
+                        variant='body1'
                         sx={{
-                            fontWeight: 'bold',
-                            marginRight: '5px'
+                            height: '3rem',
+                            backgroundColor: grey[100],
+                            marginBottom: '1rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderRadius: '5px'
                         }}
                     >
-                        {result.toFixed(2)}
+                        <Typography
+                            component='span'
+                            sx={{
+                                fontWeight: 'bold',
+                                marginRight: '5px'
+                            }}
+                        >
+                            {result.toFixed(2)}
+                        </Typography>
+                        par mois
                     </Typography>
-                    per month
-                </Typography>
 
-                <Box sx={{
-                    display: 'flex',
-                    justifyContent: 'space-around'
-                }}>
-                    <Button
-                        variant='contained'
-                        color='warning'
-                        size='large'
-                        type='submit'
-                    >
-                        Submit
-                    </Button>
+                    <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'space-around'
+                    }}>
+                        <Button
+                            variant='contained'
+                            color='warning'
+                            size='large'
+                            type='submit'
+                        >
+                            Soumettre
+                        </Button>
 
-                    <Button
-                        variant='outlined'
-                        color='warning'
-                        size='large'
-                        onClick={reload}
-                    >
-                        Reload
-                    </Button>
-                </Box>
-            </form>
-        </Box>
-    </Container>
-  )
+                        <Button
+                            variant='outlined'
+                            color='warning'
+                            size='large'
+                            onClick={reload}
+                        >
+                            Recharger
+                        </Button>
+                    </Box>
+                </form>
+            </Box>
+        </Container>
+    )
 }
 
 export default MortgageCalculator;
