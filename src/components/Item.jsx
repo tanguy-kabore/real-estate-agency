@@ -1,6 +1,6 @@
+import { Box, Paper } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import React from 'react';
-import { Paper, Box } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import DiscoverCard from './DiscoverCard';
 
 function Item(props) {

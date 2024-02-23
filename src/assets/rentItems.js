@@ -1,11 +1,19 @@
 const rentItems = [
     {
         id: 1,
+<<<<<<< HEAD
         title: "4 bed property to rent",
         address: "Queen Street, Harrow Weald, London HA2",
         price: "1,800",
         shortDescription: "Bright four bedroom house comprises of...",
         longDescription: "Bright four bedroom house comprises of lounge, kitchen, downstairs shower/wc, rear garden and driveway.",
+=======
+        title: "Propriété de 4 chambres à louer",
+        address: "Rue NKT , Yacoub EL Mansour, Rabat HA2",
+        price: "1,800",
+        shortDescription: " Maison lumineuse de quatre chambres comprenant...",
+        longDescription: "Maison lumineuse de quatre chambres comprenant un salon, une cuisine, une douche/WC au rez-de-chaussée, un jardin à l'arrière et une allée.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,11 +47,19 @@ const rentItems = [
     },
     {
         id: 2,
+<<<<<<< HEAD
         address: "Street Rd, Harrow, London HA1",
         title: "3 bed property to rent",
         price: "1,800",
         shortDescription: "Three bedroom semi-detached house featuring...",
         longDescription: "Three bedroom semi-detached house featuring two receptions, spacious kitchen, downstairs shower/wc, reat garden and driveway.",
+=======
+        address: "Rue NKT , Agdal, Rabat 25",
+        title: "Propriété de 4 chambres à louer",
+        price: "1,800",
+        shortDescription: "Maison jumelée de trois chambres comprenant...",
+        longDescription: "Maison jumelée de trois chambres comprenant deux réceptions, une cuisine spacieuse, une douche/WC en bas, un grand jardin et une allée.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1430285561322-7808604715df?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -77,11 +93,19 @@ const rentItems = [
     },
     {
         id: 3,
+<<<<<<< HEAD
         address: "King Road, Northwood Hill, London NH3",
         title: "3 bed property to rent",
         price: "1,550",
         shortDescription: "Three bedroom mid-terraced house comprises of...",
         longDescription: "Three bedroom mid-terraced house comprises of reception room, fitted kitchen, bathroom/wc and rear garden.",
+=======
+        address: "Rue NKT , Agdal, Rabat 25",
+        title: "Propriété de 2 chambres à louer",
+        price: "1,550",
+        shortDescription: "Maison mitoyenne de trois chambres comprenant ...",
+        longDescription: "Maison mitoyenne de trois chambres comprenant un séjour, une cuisine équipée, une salle de bains/wc et un jardin à l'arrière.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -115,11 +139,19 @@ const rentItems = [
     },
     {
         id: 4,
+<<<<<<< HEAD
         address: "Street Name, Wealdstone, London Wl10",
         title: "2 bed flat to rent",
         price: "1,350",
         shortDescription: "Excellent two bedroom 2nd floor flat...",
         longDescription: "Excellent two bedroom 2nd floor flat comprises from reception room, open plan fully integrated kitchen.",
+=======
+        address: "Rue NKT , Yacoub EL Mansour, Rabat HA2",
+        title: "Appartement 2 chambres à louer",
+        price: "1,350",
+        shortDescription: "Excellent 2ème étage de deux chambres",
+        longDescription: "Excellent appartement de deux chambres au 2ème étage comprenant une salle de réception, une cuisine ouverte entièrement intégrée.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80",

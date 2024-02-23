@@ -14,7 +14,7 @@ function Footer() {
   return (
     <Box>
         <Typography sx={{ textAlign: 'center', padding: '1rem' }}>
-            copyright &copy; made by Ionut Cora {newDate}
+            copyright &copy; immo agency {newDate}
         </Typography>
     </Box>
   )

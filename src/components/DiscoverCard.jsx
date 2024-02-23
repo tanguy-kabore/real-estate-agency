@@ -42,7 +42,7 @@ function DiscoverCard(props) {
                         sx={{
                             textTransform: 'capitalize',
                             color: 'white',
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
                         }}
                     >
                         {props.name}
@@ -51,7 +51,8 @@ function DiscoverCard(props) {
                         variant='body1' 
                         color='white'
                         sx={{
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
+                            textAlign: 'justify'
                         }}
                     >
                         {props.description}

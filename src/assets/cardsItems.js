@@ -1,7 +1,7 @@
-let cardsItems = [
+const cardsItems = [
     {
-        title: "2 bedroom house",
-        address: "High street, London",
+        title: "Maison de 2 chambres",
+        address: "Rue Principale, Casablanca, Maroc",
         price: "270,000",
         img: "./assets/images/img1.jpg",
         url: "/react-estate-agency/#/saleproperty/1",
@@ -10,8 +10,8 @@ let cardsItems = [
         livingrooms: 1
     },
     {
-        title: "1 bedroom flat",
-        address: "Main street, London",
+        title: "Appartement d'1 chambre",
+        address: "Rue Principale, Rabat, Maroc",
         price: "340,000",
         img: "./assets/images/img2.jpg",
         url: "/react-estate-agency/#/saleproperty/2",
@@ -20,9 +20,9 @@ let cardsItems = [
         livingrooms: 1
     },
     {
-        title: "3 bedroom property",
-        address: "Street Road, Harrow, London HA1",
-        price: "1,800 pcm",
+        title: "Propriété de 3 chambres",
+        address: "Rue des Voies, Quartier Almowafin, Casablanca",
+        price: "1,800 / Mois",
         img: "./assets/images/house6.jpg",
         url: "/react-estate-agency/#/rentproperty/2",
         bedrooms: 3,
@@ -30,8 +30,8 @@ let cardsItems = [
         livingrooms: 1
     },
     {
-        title: "2 bedroom flat",
-        address: "Oxford street, London",
+        title: "Appartement de 2 chambres",
+        address: "Rue Oxford, Quartier Gauthier, Casablanca",
         price: "320,000",
         img: "./assets/images/img3.jpg",
         url: "/react-estate-agency/#/saleproperty/4",
@@ -40,9 +40,9 @@ let cardsItems = [
         livingrooms: 1
     },
     {
-        title: "4 bedroom property",
-        address: "Queen Street, Harrow Weald, London HA2",
-        price: "1,800 pcm",
+        title: "Propriété de 4 chambres",
+        address: "Rue de la Reine, Harrow Weald, Casablanca MA2",
+        price: "1,800 / Mois",
         img: "./assets/images/house4.jpg",
         url: "/react-estate-agency/#/rentproperty/1",
         bedrooms: 4,
@@ -50,9 +50,9 @@ let cardsItems = [
         livingrooms: 1
     },
     {
-        title: "2 bedroom flat",
-        address: "Street Name, Wealdstone, London WL10",
-        price: "1,350 pcm",
+        title: "Appartement de 2 chambres",
+        address: "Rue Nom, Wealdstone, Casablanca WL10",
+        price: "1,350 / Mois",
         img: "./assets/images/flat1.jpg",
         url: "/react-estate-agency/#/rentproperty/4",
         bedrooms: 3,

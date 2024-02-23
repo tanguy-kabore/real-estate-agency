@@ -48,7 +48,11 @@ function RentSaleItem(props) {
                         marginTop: '0.5rem'
                     }}
                 >
+<<<<<<< HEAD
                     £{props.itemPrice} per month
+=======
+                    {props.itemPrice} par mois
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
                 </Typography>
                 <Typography 
                     variant='body1'
@@ -70,7 +74,11 @@ function RentSaleItem(props) {
                             color='warning' 
                             size='large'
                         >
+<<<<<<< HEAD
                             Full details
+=======
+                           DÉTAILS
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
                         </Button>
                     </Link>
                 </Box>

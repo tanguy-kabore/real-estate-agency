@@ -7,7 +7,7 @@ function ReviewsSection() {
     <Box sx={{
       paddingY: '3rem'
     }}>
-      <Typography 
+      <Typography
         variant='h2'
         sx={{
           fontSize: 'clamp(1.8rem, 1.3654rem + 0.9065vw, 2rem)',
@@ -17,7 +17,7 @@ function ReviewsSection() {
           color: 'white'
         }}
       >
-        What our customers are saying?
+        Que disent nos clients ?
       </Typography>
       <ReviewCard />
     </Box>

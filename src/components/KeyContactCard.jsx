@@ -39,41 +39,41 @@ function KeyContactCard(props) {
         }}
       >
         <Typography variant='body1' sx={{ fontWeight: 'bold' }}>
-            {props.name}
+          {props.name}
         </Typography>
         <Typography variant='body2'>
-            {props.title}
+          {props.title}
         </Typography>
-        <Button 
-            component='a' 
-            href='mailto: react@example.com' 
-            sx={{ 
-                mt: 2, 
-                padding: 0, 
-                color: 'warning.main', 
-                fontWeight: 'bold'
-            }}>
-            Email me
+        <Button
+          component='a'
+          href='mailto: react@example.com'
+          sx={{
+            mt: 2,
+            padding: 0,
+            color: 'warning.main',
+            fontWeight: 'bold'
+          }}>
+          Envoyez un email
         </Button>
-        <Box sx={{ 
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: 'center'
+        <Box sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          alignItems: 'center'
         }}>
-            <Typography sx={{ marginRight: '5px' }}>
-                or call:
-            </Typography>
-            <Button 
-                component='a' 
-                href='tel:0900800700' 
-                sx={{ 
-                    color: 'warning.main', 
-                    fontSize: 16, 
-                    padding: 0,
-                    fontWeight: 'bold'
-                }}>
-                {props.tel}
-            </Button>
+          <Typography sx={{ marginRight: '5px' }}>
+            ou appelez:
+          </Typography>
+          <Button
+            component='a'
+            href='tel:0900800700'
+            sx={{
+              color: 'warning.main',
+              fontSize: 16,
+              padding: 0,
+              fontWeight: 'bold'
+            }}>
+            {props.tel}
+          </Button>
         </Box>
       </Box>
     </Box>

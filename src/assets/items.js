@@ -1,29 +1,30 @@
 let items = [
     {
-        name: "London estate agents",
-        description: "London Estate Agents specialising in property for sale and to rent in London. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, soluta.",
+        name: "Guides & conseils immobiliers",
+        description: "Découvrez nos guides et conseils immobiliers élaborés par nos agents spécialisés. Nous sommes là pour vous guider à chaque étape de votre projet immobilier, en vous offrant des conseils avisés et personnalisés pour assurer le succès de votre démarche.",
         img: "./assets/images/img12.jpg",
         gradient: "to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)",
         direction: "row",
-        buttonTitle: "Contact us",
+        buttonTitle: "Contactez-nous",
         buttonLink: "/contact"
     },
+
     {
-        name: "Stunning properties for rent",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nisi expedita? Quia tenetur ad ex. Nisi, dolores non nihil ducimus reiciendis deleniti ut culpa asperiores",
+        name: "Superbes logements à louer",
+        description: "Explorez notre sélection de logements à louer, tous plus exceptionnels les uns que les autres.",
         img: "./assets/images/img2.jpg",
         gradient: "to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35)",
         direction: "row-reverse",
-        buttonTitle: "Properties for rent",
+        buttonTitle: "Propriétés à louer",
         buttonLink: "/rent"
     },
     {
-        name: "Buy your own property today",
-        description: "We are here to help you. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi, quidem animi odit sequi dolorum officia voluptatum nulla deleniti quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        name: "Achetez votre logement",
+        description: "Nous sommes là pour vous aider.",
         img: "./assets/images/house6.jpg",
         gradient: "rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)",
         direction: "row-reverse",
-        buttonTitle: "Properties for sale",
+        buttonTitle: "Propriétés à vendre",
         buttonLink: "/sale"
     },
 ];

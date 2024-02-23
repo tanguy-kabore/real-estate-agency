@@ -14,7 +14,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function ReviewCard() {
 
-    const theme = useTheme();
+  const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = reviews.length;
 
@@ -41,52 +41,52 @@ function ReviewCard() {
       >
         <Avatar alt="avatar" src={reviews[activeStep].img} sx={{ width: 56, height: 56, marginRight: '1rem' }} />
         <Box sx={{
-            display: 'flex',
-            flexDirection: 'column'
+          display: 'flex',
+          flexDirection: 'column'
         }}>
-            <Typography sx={{ color: 'white' }}>{reviews[activeStep].label}</Typography>
-            <Rating
-                name="text-feedback"
-                value={reviews[activeStep].rating}
-                readOnly
-                precision={0.5}
-                emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-            />
+          <Typography sx={{ color: 'white' }}>{reviews[activeStep].label}</Typography>
+          <Rating
+            name="text-feedback"
+            value={reviews[activeStep].rating}
+            readOnly
+            precision={0.5}
+            emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+          />
         </Box>
       </Paper>
       <Box sx={{ height: 100, p: 2 }}>
         <Typography variant='body1' sx={{ color: 'white' }}>
-            "{reviews[activeStep].description}"
+          "{reviews[activeStep].description}"
         </Typography>
       </Box>
 
-        <MobileStepper
-            variant="dots"
-            steps={maxSteps}
-            position="static"
-            activeStep={activeStep}
-            sx={{ flexGrow: 1, background: 'transparent' }}
-            nextButton={
-                <Button size="small" color='warning' onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-                Next
-                {theme.direction === 'rtl' ? (
-                    <KeyboardArrowLeft />
-                ) : (
-                    <KeyboardArrowRight />
-                )}
-                </Button>
-            }
-            backButton={
-                <Button size="small" color='warning' onClick={handleBack} disabled={activeStep === 0}>
-                {theme.direction === 'rtl' ? (
-                    <KeyboardArrowRight />
-                ) : (
-                    <KeyboardArrowLeft />
-                )}
-                Back
-                </Button>
-            }
-        />
+      <MobileStepper
+        variant="dots"
+        steps={maxSteps}
+        position="static"
+        activeStep={activeStep}
+        sx={{ flexGrow: 1, background: 'transparent' }}
+        nextButton={
+          <Button size="small" color='warning' onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+            Suivant
+            {theme.direction === 'rtl' ? (
+              <KeyboardArrowLeft />
+            ) : (
+              <KeyboardArrowRight />
+            )}
+          </Button>
+        }
+        backButton={
+          <Button size="small" color='warning' onClick={handleBack} disabled={activeStep === 0}>
+            {theme.direction === 'rtl' ? (
+              <KeyboardArrowRight />
+            ) : (
+              <KeyboardArrowLeft />
+            )}
+            Précédent
+          </Button>
+        }
+      />
 
     </Box>
   )

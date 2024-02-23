@@ -44,7 +44,8 @@ function WhyChooseUsCard(props) {
             </Box>
             
             <Typography sx={{
-                color: 'white'
+                color: 'white',
+                textAlign: 'justify'
             }}>
                 {props.description}
             </Typography>

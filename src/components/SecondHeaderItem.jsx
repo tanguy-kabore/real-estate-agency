@@ -22,21 +22,21 @@ function SecondHeaderItem(props) {
         },
     };
 
-  return (
-    <ThemeProvider theme={theme}>
-        <Box sx={{
-            height: '75vh',
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${props.secondHeaderImg})`,
-            backgroundSize: 'cover', 
-            backgroundPosition: `${props.imgPosition}`, 
-            backgroundAttachment: { xs: 'unset', md: 'fixed' },
-            display: 'flex',
-            flexDirection: `${props.direction}`
-        }}>
-            <DiscoverCard name={props.secondHeaderTitle} variant='h1' displayType='none' direction={props.direction} />
-        </Box>
-    </ThemeProvider>
-  )
+    return (
+        <ThemeProvider theme={theme}>
+            <Box sx={{
+                height: '75vh',
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${props.secondHeaderImg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: `${props.imgPosition}`,
+                backgroundAttachment: { xs: 'unset', md: 'fixed' },
+                display: 'flex',
+                flexDirection: `${props.direction}`
+            }}>
+                <DiscoverCard name={props.secondHeaderTitle} variant='h1' displayType='none' direction={props.direction} />
+            </Box>
+        </ThemeProvider>
+    )
 }
 
 export default SecondHeaderItem;

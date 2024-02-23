@@ -7,14 +7,14 @@ import Person2Img from '../assets/images/person2.jpg';
 function KeyContactSection() {
   return (
     <Box>
-      <Container sx={{ 
+      <Container sx={{
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
         justifyContent: { xs: 'space-around', lg: 'space-between' },
         alignItems: 'center'
-    }}>
-        <KeyContactCard img={Person1Img} name='John Smith' title='General Manager' tel='0900800700' />
-        <KeyContactCard img={Person2Img} name='Mick Kane' title='Branch Manager' tel='0500400300' />
+      }}>
+        <KeyContactCard img={Person1Img} name='Tanguy kabore' title='General Manager' tel='+212 060000000' />
+        <KeyContactCard img={Person2Img} name='Cheikh Sidiya Haroun' title='Branch Manager' tel='+212 050000000' />
       </Container>
     </Box>
   )

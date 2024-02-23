@@ -1,11 +1,19 @@
 const saleItems = [
     {
         id: 1,
+<<<<<<< HEAD
         title: "1 bed flat for sale",
         address: "Street Name, Isleworth, London IS30",
         price: 600000,
         shortDescription: "This Apartment Benefits From...",
         longDescription: "This Apartment Benefits From A Huge Modern Open Plan Kitchen With A Reception, Two Bathrooms / One Of Which Is Ensuite With The Master Bedroom.",
+=======
+        title: "Appartement 1 chambre à vendre",
+        address: "Rue NKT , Agdal, Rabat 25",
+        price: 600000,
+        shortDescription: "Cet Appartement Bénéficie...",
+        longDescription: "Cet appartement bénéficie d'une immense cuisine ouverte moderne avec une réception, de deux salles de bains dont une attenante à la chambre principale.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1543053927-0f3795a46e24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -39,11 +47,19 @@ const saleItems = [
     },
     {
         id: 2,
+<<<<<<< HEAD
         title: "2 bed property for sale",
         address: "Street Rd, Kingsbury, London LO1",
         price: 350000,
         shortDescription: "Immaculate Two Double Bedroom...",
         longDescription: "Immaculate Two Double Bedroom Ground Floor Maisonette Situated Within Easy Access Of Kingsbury High Street & Excellent Transportation Links.",
+=======
+        title: "Propriété de 2 chambres à vendre",
+        address: "Propriété de 2 chambres à vendre",
+        price: 350000,
+        shortDescription: "Immaculée Deux Chambres Doubles...",
+        longDescription: "Immaculée maisonnette de deux chambres doubles au rez-de-chaussée située dans un accès facile à Kingsbury High Street et d'excellentes liaisons de transport.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -77,11 +93,19 @@ const saleItems = [
     },
     {
         id: 3,
+<<<<<<< HEAD
         title: "3 bed property for sale",
         address: "King Street, Watford, London WD12",
         price: 440000,
         shortDescription: "Three Bedroom End Of Terraced...",
         longDescription: "Three Bedroom End Of Terraced Family Home In Fuller Road, North Watford. This Property Benefits From A Reception With A Dining Area, Separate Modern Fitted Kitchen.",
+=======
+        title: "Propriété de 3 chambres à vendre",
+        address: "Rue NKT , Agdal, Rabat 25",
+        price: 440000,
+        shortDescription: "Fin de maison mitoyenne de trois chambres...",
+        longDescription: "Extrémité de trois chambres d'une maison familiale mitoyenne à Fuller Road, North Watford. Cette propriété bénéficie d'une réception avec un coin repas, d'une cuisine séparée moderne équipée.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -115,11 +139,19 @@ const saleItems = [
     },
     {
         id: 4,
+<<<<<<< HEAD
         title: "3 bed flat for sale",
         address: "Queen Road, Isleworth, London IS4",
         price: 650000,
         shortDescription: "Stunning Immaculate Three Bedroom...",
         longDescription: "Stunning Immaculate Three Bedroom Top Floor Apartment. This Property Benefits From A Modern Sleek Open Plan Kitchen With A Reception, Two Modern Bathrooms.",
+=======
+        title: "Appartement de 3 chambres à vendre",
+        address: "Rue NKT , Agdal, Rabat 25",
+        price: 650000,
+        shortDescription: "Superbe appartement impeccable de trois chambres...",
+        longDescription: "Superbe appartement impeccable de trois chambres au dernier étage. Cette propriété bénéficie d'une cuisine ouverte moderne et élégante avec une réception et de deux salles de bains modernes.",
+>>>>>>> 5782b23f70c6be3959151b443add0ad92901ebb5
         images: [
             {
                 original: "https://images.unsplash.com/photo-1515263487990-61b07816b324?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",

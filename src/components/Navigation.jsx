@@ -15,6 +15,22 @@ import { Link } from 'react-router-dom';
 
 const pages = ['sale', 'rent', 'about', 'contact'];
 
+// Fonction pour traduire le nom de la page
+const translatePage = (page) => {
+    switch (page) {
+        case 'sale':
+            return 'vente';
+        case 'rent':
+            return 'location';
+        case 'about':
+            return "àpropos";
+        case 'contact':
+            return 'contact';
+        default:
+            return page;
+    }
+};
+
 function Navigation() {
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,103 +45,88 @@ function Navigation() {
 
     const darkTheme = createTheme({
         palette: {
-          mode: 'dark',
-          primary: {
-            main: '#1976d2',
-          },
+            mode: 'dark',
+            primary: {
+                main: '#1976d2',
+            },
         },
         typography: {
             fontFamily: [
-              'Montserrat',
-              'sans-serif'
+                'Montserrat',
+                'sans-serif'
             ].join(','),
         },
     });
 
-  return (
-    <ThemeProvider theme={darkTheme}>
-        <AppBar 
-            sx={{
-                position: 'relative',
-                backgroundColor: orange[800], 
-                boxShadow: 'none'
-            }}
-        >
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Link to='/' style={{textDecoration: 'none'}}>
-                        <Box sx={{display: 'flex'}}>
-                            <Box sx={{
-                                display: { xs: 'none', md: 'flex' },
-                                marginRight: '5px'
-                            }}>
-                                <img src={logo} alt="logo" />
-                            </Box>
-                            <Typography
-                                variant="h6"
-                                noWrap
-                                sx={{
-                                    mr: 2,
+    return (
+        <ThemeProvider theme={darkTheme}>
+            <AppBar
+                sx={{
+                    position: 'relative',
+                    backgroundColor: orange[800],
+                    boxShadow: 'none'
+                }}
+            >
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Link to='/' style={{ textDecoration: 'none' }}>
+                            <Box sx={{ display: 'flex' }}>
+                                <Box sx={{
                                     display: { xs: 'none', md: 'flex' },
-                                    fontWeight: 700,
-                                    letterSpacing: '.1rem',
-                                    color: 'white',
-                                    textDecoration: 'none'
-                                }}
-                            >
-                                React Agency
-                            </Typography>
-                        </Box>
-                    </Link>
-
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            <MenuItem>
-                                <Link 
-                                    to='/'
-                                    style={{
-                                        textAlign: 'center',
+                                    marginRight: '5px'
+                                }}>
+                                    <img src={logo} alt="logo" />
+                                </Box>
+                                <Typography
+                                    variant="h6"
+                                    noWrap
+                                    sx={{
+                                        mr: 2,
+                                        display: { xs: 'none', md: 'flex' },
+                                        fontWeight: 600,
+                                        letterSpacing: '.1rem',
                                         color: 'white',
-                                        textDecoration: 'none',
-                                        textTransform: 'uppercase',
-                                        fontWeight: 'bold'
+                                        textDecoration: 'none'
                                     }}
                                 >
-                                    Home
-                                </Link>
-                            </MenuItem>
+                                    Immo Agency
+                                </Typography>
+                            </Box>
+                        </Link>
 
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Link 
-                                        to={`/${page}`}
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleOpenNavMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorElNav}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'left',
+                                }}
+                                open={Boolean(anchorElNav)}
+                                onClose={handleCloseNavMenu}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                    top: '64px', // Ajustez la valeur en fonction de votre mise en page
+                                }}
+                            >
+                                <MenuItem>
+                                    <Link
+                                        to='/'
                                         style={{
                                             textAlign: 'center',
                                             color: 'white',
@@ -134,91 +135,104 @@ function Navigation() {
                                             fontWeight: 'bold'
                                         }}
                                     >
-                                        {page}
+                                        Accueil
                                     </Link>
                                 </MenuItem>
-                            ))}
 
-                        </Menu>
-                    </Box>
-                    <Link 
-                        to='/' 
-                        style={{
-                            textDecoration: 'none', 
-                            width: '100%',
-                            display: 'flex',
-                            justifyContent: 'center'
-                        }}
-                    >
-                        <Box sx={{
-                            display: { xs: 'flex', md: 'none' },
-                            justifyContent: 'center'
-                        }}>
-                            <Box sx={{
-                                display: { xs: 'flex', md: 'none' },
-                                marginRight: '5px'
-                            }}>
-                                <img src={logo} alt="logo" />
-                            </Box>
-                            <Typography
-                                variant="h5"
-                                noWrap
-                                sx={{
-                                    mr: 2,
-                                    display: { xs: 'flex', md: 'none' },
-                                    flexGrow: 1,
-                                    fontWeight: 700,
-                                    letterSpacing: '.1rem',
-                                    color: 'white',
-                                    textDecoration: 'none'
-                                }}
-                            >
-                                React Agency
-                            </Typography>
+                                {pages.map((page) => (
+                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                        <Link
+                                            to={`/${page}`}
+                                            style={{
+                                                textAlign: 'center',
+                                                color: 'white',
+                                                textDecoration: 'none',
+                                                textTransform: 'uppercase',
+                                                fontWeight: 'bold'
+                                            }}
+                                        >
+                                            {translatePage(page)}
+                                        </Link>
+                                    </MenuItem>
+                                ))}
+                            </Menu>
                         </Box>
-                    </Link>
-                    <Box 
-                        sx={{ 
-                            flexGrow: 1, 
-                            display: { xs: 'none', md: 'flex' }, 
-                            justifyContent: 'end',
-                            alignItems: 'center'
-                        }}>
-                        <Link 
+                        <Link
                             to='/'
                             style={{
-                                color: 'white',
-                                fontWeight: 'bold',
-                                textTransform: 'uppercase',
-                                textDecoration: 'none'
+                                textDecoration: 'none',
+                                width: '100%',
+                                display: 'flex',
+                                justifyContent: 'center'
                             }}
                         >
-                            home
+                            <Box sx={{
+                                display: { xs: 'flex', md: 'none' },
+                                justifyContent: 'center'
+                            }}>
+                                <Box sx={{
+                                    display: { xs: 'flex', md: 'none' },
+                                    marginRight: '5px'
+                                }}>
+                                    <img src={logo} alt="logo" />
+                                </Box>
+                                <Typography
+                                    variant="h5"
+                                    noWrap
+                                    sx={{
+                                        mr: 2,
+                                        display: { xs: 'flex', md: 'none' },
+                                        flexGrow: 1,
+                                        fontWeight: 700,
+                                        letterSpacing: '.1rem',
+                                        color: 'white',
+                                        textDecoration: 'none'
+                                    }}
+                                >
+                                    Immo Agency
+                                </Typography>
+                            </Box>
                         </Link>
-
-                        {pages.map((page) => (
-                            <Link 
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                to={`/${page}`}
+                        <Box
+                            sx={{
+                                flexGrow: 1,
+                                display: { xs: 'none', md: 'flex' },
+                                justifyContent: 'end',
+                                alignItems: 'center'
+                            }}>
+                            <Link
+                                to='/'
                                 style={{
                                     color: 'white',
                                     fontWeight: 'bold',
                                     textTransform: 'uppercase',
-                                    marginLeft: '8px',
                                     textDecoration: 'none'
                                 }}
                             >
-                                {page}
+                                Accueil
                             </Link>
-                        ))}
-
-                    </Box>
-                </Toolbar>
-            </Container>
-        </AppBar>
-    </ThemeProvider>
-  )
+                            {pages.map((page) => (
+                                <Link
+                                    key={page}
+                                    onClick={handleCloseNavMenu}
+                                    to={`/${page}`}
+                                    style={{
+                                        color: 'white',
+                                        fontWeight: 'bold',
+                                        textTransform: 'uppercase',
+                                        marginLeft: '8px',
+                                        textDecoration: 'none'
+                                    }}
+                                >
+                                    {translatePage(page)}
+                                </Link>
+                            ))}
+                        </Box>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </ThemeProvider>
+    );
 }
 
 export default Navigation;
