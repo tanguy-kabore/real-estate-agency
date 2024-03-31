@@ -1,5 +1,5 @@
 import React from 'react';
-import RentSaleItem from './RentSaleComponents/RentSaleItem';
+import RentSaleItem from './SaleDetail';
 
 function SaleItem(props) {
   return (

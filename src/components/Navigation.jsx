@@ -23,7 +23,7 @@ const translatePage = (page) => {
         case 'rent':
             return 'location';
         case 'about':
-            return "àpropos";
+            return "à-propos";
         case 'contact':
             return 'contact';
         default:
@@ -157,55 +157,21 @@ function Navigation() {
                                 ))}
                             </Menu>
                         </Box>
-                        <Link
-                            to='/'
-                            style={{
-                                textDecoration: 'none',
-                                width: '100%',
-                                display: 'flex',
-                                justifyContent: 'center'
-                            }}
-                        >
-                            <Box sx={{
-                                display: { xs: 'flex', md: 'none' },
-                                justifyContent: 'center'
-                            }}>
-                                <Box sx={{
-                                    display: { xs: 'flex', md: 'none' },
-                                    marginRight: '5px'
-                                }}>
-                                    <img src={logo} alt="logo" />
-                                </Box>
-                                <Typography
-                                    variant="h5"
-                                    noWrap
-                                    sx={{
-                                        mr: 2,
-                                        display: { xs: 'flex', md: 'none' },
-                                        flexGrow: 1,
-                                        fontWeight: 700,
-                                        letterSpacing: '.1rem',
-                                        color: 'white',
-                                        textDecoration: 'none'
-                                    }}
-                                >
-                                    Immo Agency
-                                </Typography>
-                            </Box>
-                        </Link>
                         <Box
                             sx={{
                                 flexGrow: 1,
                                 display: { xs: 'none', md: 'flex' },
                                 justifyContent: 'end',
                                 alignItems: 'center'
-                            }}>
+                            }}
+                        >
                             <Link
                                 to='/'
                                 style={{
                                     color: 'white',
                                     fontWeight: 'bold',
                                     textTransform: 'uppercase',
+                                    marginLeft: '8px',
                                     textDecoration: 'none'
                                 }}
                             >
@@ -227,7 +193,22 @@ function Navigation() {
                                     {translatePage(page)}
                                 </Link>
                             ))}
+                            <Link
+                                to='http://localhost:3000' // Ajoutez le lien vers la page de connexion
+                                target="_blank"  // Cette ligne ouvrira le lien dans un nouvel onglet
+                                rel="noopener noreferrer"  // Ceci est recommandé pour des raisons de sécurité
+                                style={{
+                                    color: 'white',
+                                    fontWeight: 'bold',
+                                    textTransform: 'uppercase',
+                                    marginLeft: '8px',
+                                    textDecoration: 'none'
+                                }}
+                            >
+                                Connexion
+                            </Link>
                         </Box>
+
                     </Toolbar>
                 </Container>
             </AppBar>

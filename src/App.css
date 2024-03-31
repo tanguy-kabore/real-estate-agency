@@ -1,5 +1,55 @@
 .App {
   text-align: center;
+  margin: auto;
+  background: #717171;
+  height: 700px;
+}
+.botIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  position: fixed;
+  bottom: 45px;
+  z-index: 9999;
+  right: 40px;
+  cursor: pointer;
+}
+.app-chatbot-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #c7d3d4ff;
+  border: none;
+  position: fixed;
+  bottom: 45px;
+  z-index: 9999;
+  right: 40px;
+  cursor: pointer;
+}
+.react-chatbot-kit-chat-container {
+  position: fixed;
+  bottom: 100px;
+  z-index: 9999;
+  right: 40px;
+}
+
+.react-chatbot-kit-chat-message-container {
+  background: rgb(216, 255, 230);
+}
+
+.react-chatbot-kit-chat-header {
+  background: rgb(25, 32, 173);
+  color: white;
+}
+
+.react-chatbot-kit-chat-input-form {
+  background: rgb(164, 254, 245);
+  color: white;
+  border-radius: 10px;
+}
+.react-chatbot-kit-chat-btn-send-icon {
+  width: 24px;
 }
 
 .App-logo {

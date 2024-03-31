@@ -8,6 +8,7 @@ import { Box, Container, Typography } from '@mui/material';
 import ContactForm from '../components/ContactPageComponents/ContactForm';
 import { grey } from '@mui/material/colors';
 
+
 function Contact() {
   return (
     <Box>

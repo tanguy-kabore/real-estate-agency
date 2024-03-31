@@ -10,17 +10,14 @@ const fetchPropertiesFromAPI = async () => {
   }
 };
 
-// Mettre à jour rentItems avec les données de l'API
-const updateRentItemsFromAPI = async () => {
+// Mettre à jour saleItems avec les données de l'API
+const updateSaleItemsFromAPI = async () => {
   try {
     // Récupérer les données de l'API
     const apiData = await fetchPropertiesFromAPI();
 
-    // Filtrer les propriétés avec le statut "for-rent"
-    const forRentProperties = apiData.filter(property => property.status === "for-rent");
-
-    // Mettre à jour rentItems avec les données filtrées de l'API
-    const updatedRentItems = forRentProperties.map(property => ({
+    // Mettre à jour saleItems avec les données de l'API
+    const updatedSaleItems = apiData.map(property => ({
       id: property._id,
       title: property.title,
       address: `${property.address.street}, ${property.address.city}, ${property.address.zipCode}, ${property.address.country}`,
@@ -36,19 +33,17 @@ const updateRentItemsFromAPI = async () => {
       livingrooms: parseInt(property.livingrooms),
     }));
 
-    console.log('Données de rentItems mises à jour avec succès:', updatedRentItems);
+    console.log('Données de saleItems mises à jour avec succès:', updatedSaleItems);
 
-    return updatedRentItems;  // Retourner les nouvelles données
+    return updatedSaleItems;  // Retourner les nouvelles données
   } catch (error) {
-    console.error('Erreur lors de la mise à jour de rentItems avec les données de l\'API', error);
+    console.error('Erreur lors de la mise à jour de saleItems avec les données de l\'API', error);
     throw error;
   }
 };
 
-// Exporter une fonction qui retourne rentItems
-const getRentItems = async () => {
-  const rentItems = await updateRentItemsFromAPI();
-  return rentItems;
+// Exporter une fonction qui retourne saleItems
+export const getSaleItems = async () => {
+  const saleItems = await updateSaleItemsFromAPI();
+  return saleItems;
 };
-
-export default getRentItems;
