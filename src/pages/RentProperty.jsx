@@ -30,7 +30,7 @@ function RentProperty() {
     console.log('id:', id);
     console.log('rentItems:', rentItems);
     console.log('found property:', property);
-  
+
     if (property) {
       setRentProperty(property);
     }
@@ -38,17 +38,17 @@ function RentProperty() {
 
   return (
     <div>
-        <Navigation />
+      <Navigation />
 
-        {
-          rentProperty ? (
-            <RentSaleProperty propertyAddress={rentProperty.address} propertyImage={rentProperty.image1} propertyImages={rentProperty.images} propertyPrice={rentProperty.price} propertyLongDescription={rentProperty.longDescription} propertyBedrooms={rentProperty.bedrooms} propertyBathrooms={rentProperty.bathrooms} propertyLivingrooms={rentProperty.livingrooms} />
-          ) : (
-            null
-          )
-        }
+      {
+        rentProperty ? (
+          <RentSaleProperty propertyAddress={rentProperty.address} propertyImage={rentProperty.image1} propertyImages={rentProperty.images} propertyPrice={rentProperty.price} propertyLongDescription={rentProperty.longDescription} propertyBedrooms={rentProperty.bedrooms} propertyBathrooms={rentProperty.bathrooms} propertyLivingrooms={rentProperty.livingrooms} />
+        ) : (
+          null
+        )
+      }
 
-        <Footer />
+      <Footer />
     </div>
   )
 }

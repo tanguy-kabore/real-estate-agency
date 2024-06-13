@@ -12,7 +12,7 @@ function ContactForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:8080/api/v1/messages', {
+      const response = await fetch('https://real-estate-agency-rest-api.onrender.com/api/v1/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
